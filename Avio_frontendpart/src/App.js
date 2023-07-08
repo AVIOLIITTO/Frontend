@@ -7,6 +7,8 @@ import Home from "./components/Home/Home";
 import Category from "./components/Category/Category";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
 import Newsletter from "./components/Footer/Newsletter/Newsletter";
+import SignUp from "./components/Auth/Signup/SignUp";
+import Login from "./components/Auth/Login/Login";
 // import AppContext from "./utils/context";
 
 function App() {
@@ -16,8 +18,11 @@ function App() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<div>About Page</div>} />
                     <Route path="/category/:id" element={<Category />} />
                     <Route path="/product/:id" element={<SingleProduct />} />
+                    <Route path="/signup" element={<SignUp />} />
+                    <Route path="/login" element={<Login />} />
                 </Routes>
                 <Newsletter />
                 <Footer />

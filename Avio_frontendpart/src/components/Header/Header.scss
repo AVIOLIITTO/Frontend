@@ -82,6 +82,28 @@
                 border-radius: 10px;
             }
         }
+        #header-signup-btn {
+            color: white;
+            font-size: 15px;
+            padding: 6px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.6;
+                border: 0.1px solid #a1a1a1;
+            }
+        }
+        #header-logout-btn{
+            color: white;
+            font-size: 15px;
+            padding: 6px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.6;
+                border: 0.1px solid #a1a1a1;
+            }
+        }
     }
     &.sticky-header {
         background-color: #212121;
