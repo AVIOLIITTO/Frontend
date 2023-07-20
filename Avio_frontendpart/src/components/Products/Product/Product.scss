@@ -2,9 +2,9 @@
 .product-card {
     cursor: pointer;
     width: calc(50% - 5px);
-    margin-bottom: 20px;
+    margin: 0 10px 20px;
     @include md {
-        width: calc(25% - 15px);
+        width: calc(25% - 35px);
     }
     .thumbnail {
         width: 100%;
@@ -15,15 +15,17 @@
         display: flex;
         align-items: center;
         @include md {
-            height: 350px;
+            height: 280px;
         }
         img {
             transition: all ease 0.3s;
             display: block;
             width: 100%;
+            max-height: 100%;
         }
     }
     .prod-details {
+        padding: 5px 10px;
         .name {
             font-size: 14px;
             display: block;
