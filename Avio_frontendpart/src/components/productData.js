@@ -11,6 +11,9 @@ export const productData = {
             rate: "3.5",
             ratings: "24",
             reviews: "11",
+            status: "In Stock",
+            deliveryCharges: "Free",
+            seller: "ProEnt"
         }
     },
     {
@@ -18,13 +21,16 @@ export const productData = {
         attributes: {
             price: "7996",
             originalPrice: "9600",
-            title: "Electronic Snap Circuits Mini Kits Classpack, FM Radio, Motion Detector, Music Box",
+            title: "Electronic Snap Circuits Mini Kits Classpack, FM Radio, Motion Detector,Electronic Snap Circuits Mini Kits Classpack, FM Radio, Motion Detector, Music Box ",
             shortDescription: "Electronic Snap Circuits Mini Kits Classpack, FM Radio, Motion Detector, Music Box (Set of 5)",
             offer: ["Order by 10pm and get 20% off.", "Order by 10pm and get 20% off.", "Order by 10pm and get 20% off.", "Order by 10pm and get 20% off."],
             img_url: ["https://images-na.ssl-images-amazon.com/images/I/51M0KnJxjKL.jpg","https://images-na.ssl-images-amazon.com/images/I/5166GD8OkXL.jpg","https://images-na.ssl-images-amazon.com/images/I/61o5S1VnaNL.jpg","https://images-na.ssl-images-amazon.com/images/I/61t4Q0rPYjL.jpg","https://images-na.ssl-images-amazon.com/images/I/61NASUAyqcL.jpg","https://images-na.ssl-images-amazon.com/images/I/51OMrADdyJL.jpg"],
             rate: "4.0",
             ratings: "24",
             reviews: "11",
+            status: "Out of Stock",
+            deliveryCharges: "₹40",
+            seller: "Glossy Tech"
         }
     },
     {
@@ -39,6 +45,9 @@ export const productData = {
             rate: "4.4",
             ratings: "24",
             reviews: "11",
+            status: "In Stock",
+            deliveryCharges: "Free",
+            seller: "Glossy Tech",
         }
     },
     {
@@ -53,6 +62,9 @@ export const productData = {
             rate: "4.0",
             ratings: "24",
             reviews: "11",
+            status: "Out of Stock",
+            deliveryCharges: "Free",
+            seller: "ProEnt",
         }
     },
     {
@@ -67,6 +79,9 @@ export const productData = {
             rate: "3.9",
             ratings: "24",
             reviews: "11",
+            status: "Out of Stock",
+            deliveryCharges: "₹40",
+            seller: "ProEnt",
         }
     },
     {
@@ -81,6 +96,9 @@ export const productData = {
             rate: "4.1",
             ratings: "24",
             reviews: "11",
+            status: "In Stock",
+            deliveryCharges: "₹40",
+            seller: "Glossy Tech",
         }
     },
     {
@@ -95,6 +113,9 @@ export const productData = {
             rate: "2.8",
             ratings: "24",
             reviews: "11",
+            status: "In Stock",
+            deliveryCharges: "Free",
+            seller: "ProEnt",
         }
     },
     {
@@ -109,6 +130,9 @@ export const productData = {
             rate: "3.7",
             ratings: "24",
             reviews: "11",
+            status: "In Stock",
+            deliveryCharges: "Free",
+            seller: "Glossy Tech",
         }
     },
     {
@@ -123,6 +147,9 @@ export const productData = {
             rate: "4.4",
             ratings: "24",
             reviews: "11",
+            status: "Out of Stock",
+            deliveryCharges: "₹70",
+            seller: "Glossy Tech",
         }
     }]
 }

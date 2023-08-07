@@ -5,12 +5,15 @@ import "./ImageContainer.scss";
 import { Button } from "@mui/material";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import { Label } from "@mui/icons-material";
 
 
 const ImageContainer = ({ urls }) => {
 
     const [selectedImg, setSelectedImg] = useState(null);
     const [inCart, setInCart] = useState(false);
+    const [quantity, setQuantity] = useState(1);
+
 
     const responsive = {
         LargeDesktop: {
@@ -56,20 +59,17 @@ const ImageContainer = ({ urls }) => {
                 </Carousel>
             </div>
             <div className="buy-and-cart-buttons">
-                {!inCart ? <Button id="add-btn" onClick={()=>{setInCart(prev=>!prev)}}><ShoppingCartIcon />&nbsp; ADD TO CART</Button> : <Button id="add-btn" onClick={()=>{setInCart(prev=>!prev)}}><ShoppingCartIcon />&nbsp; GO TO CART</Button>}
+                {!inCart ? <Button id="add-btn" onClick={() => { setInCart(prev => !prev) }}><ShoppingCartIcon />&nbsp; ADD TO CART</Button> : <Button id="add-btn" onClick={() => { setInCart(prev => !prev) }}><ShoppingCartIcon />&nbsp; REMOVE FROM CART</Button>}
                 <Button id="buy-btn"><ShoppingBagIcon />&nbsp; BUY NOW</Button>
             </div>
             <div className="quantity-buttons-div">
                 <div className="quantity-buttons">
                     <label>Quantity: </label>
-                    <span>
-                        <select name="Quantity" id="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </span>
+                    <div className="quantity-value-box">
+                        <span className="decrease-quantity" onClick={() => { if (quantity) setQuantity(prev => prev - 1) }}>-</span>
+                        <input className="value" value={quantity} onChange={(e) => { setQuantity(Number(e.target.value)) }}></input>
+                        <span className="increase-quantity" onClick={() => { setQuantity(prev => prev + 1) }}>+</span>
+                    </div>
                 </div>
             </div>
         </div>

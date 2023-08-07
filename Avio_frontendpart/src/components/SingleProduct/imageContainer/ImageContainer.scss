@@ -124,28 +124,46 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            span {
-                font-size: 18px;
-                width: 40px;
+            label{
+                font-size: 20px;
+                font-weight: 200;
+            }
+            .quantity-value-box{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                cursor: pointer;
-                color: #6b6b6b;
-                select{
-                    padding: 7.5px 10px;
-                    width: 60px;
-                    border: 1px solid rgb(181, 181, 181);
-                    border-radius: 7px;
+                margin: 10px;
+                gap: 10px;
+                .value{
+                    border: 1px solid #ff9d00;
+                    font-size: 18px;
+                    font-weight: 200;
+                    width: 30px;
+                    text-align: center;
                 }
-                &:nth-child(1) {
-                    border-right: 2px solid rgba(0, 0, 0, 0.2);
+                .decrease-quantity{
+                    height: 30px;
+                    width: 30px;
+                    font-size: 25px;
+                    background-color: #ff9d00;
+                    color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
                 }
-                &:nth-child(2) {
-                    width: 90px;
-                }
-                &:nth-child(3) {
-                    border-left: 2px solid rgba(0, 0, 0, 0.2);
+                .increase-quantity{
+                    height: 30px;
+                    width: 30px;
+                    font-size: 25px;
+                    background-color: #ff9d00;
+                    color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
                 }
             }
         }

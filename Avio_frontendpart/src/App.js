@@ -9,24 +9,31 @@ import SingleProduct from "./components/SingleProduct/SingleProduct";
 import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import SignUp from "./components/Auth/Signup/SignUp";
 import Login from "./components/Auth/Login/Login";
+import Cart from "./components/Cart/Cart";
+import PrivateComponent from "./components/PrivateComponent";
 // import AppContext from "./utils/context";
 
 function App() {
     return (
         <BrowserRouter>
-            
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<div>About Page</div>} />
-                    <Route path="/category/:id" element={<Category />} />
-                    <Route path="/product/:id" element={<SingleProduct />} />
-                    <Route path="/signup" element={<SignUp />} />
-                    <Route path="/login" element={<Login />} />
-                </Routes>
-                <Newsletter />
-                <Footer />
-    
+
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<div>About Page</div>} />
+                <Route path="/category/:id" element={<Category />} />
+                <Route path="/product/:id" element={<SingleProduct />} />
+                <Route path="/signup" element={<SignUp />} />
+                <Route path="/login" element={<Login />} />
+
+
+                <Route element={<PrivateComponent />}>
+                    <Route path="/cart" element={<Cart />} />
+                </Route>
+            </Routes>
+            <Newsletter />
+            <Footer />
+
         </BrowserRouter>
     );
 }

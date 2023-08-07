@@ -58,7 +58,7 @@ const Header = () => {
                             className="cart-icon"
 
                         >
-                            <CgShoppingCart />
+                            <CgShoppingCart onClick={() => navigate("/cart")}/>
 
                         </span>
                         {!isLogin && <Button id="header-signup-btn" onClick={() => navigate("/signup")}>SignUp</Button>}
