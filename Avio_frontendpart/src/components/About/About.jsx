@@ -43,7 +43,7 @@ const About = () => {
                         <img class="images" src={Dheeraj} alt="John" />
                         <div class="container">
                             <h2>Dheeraj Gahlot</h2>
-                            <p class="titles">Co-Founder</p>
+                            <p class="titles">Co-Founder & Technical Head</p>
                             <p> Btech IIT Kharagpur</p>
                             <p>dhruvkgp2003@gmail.com</p>
                             <p><button class="buttons"> <a rel="stylesheet" href="https://www.linkedin.com/in/dheeraj-gahlot-395261222/" style={{textDecoration:"none" , color:"white"}}> Contact</a></button></p>
