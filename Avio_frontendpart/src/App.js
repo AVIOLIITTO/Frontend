@@ -20,11 +20,12 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<div>About Page</div>} />
+                {/* <Route path="/about" element={<div>About Page</div>} /> */}
                 <Route path="/category/:id" element={<Category />} />
                 <Route path="/product/:id" element={<SingleProduct />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/about" element={<About />} />
 
 
                 <Route element={<PrivateComponent />}>
